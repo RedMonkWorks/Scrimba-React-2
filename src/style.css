@@ -41,11 +41,20 @@ nav {
   line-height: 110%;
 }
 
+.container-lessons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card {
-  max-width: 235px;
+  width: 235px;
   padding: 0 2rem;
   margin-bottom: 2rem;
-
+  flex: 0 0 auto; /* ADD */
+  display: flex; /* ADD */
+  flex-direction: column; /* ADD */
   line-height: 130%;
 }
 
@@ -72,7 +81,6 @@ nav {
 .rating {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   gap: 3px;
   font-weight: 300;
   color: #918e9b;
